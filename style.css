@@ -1,0 +1,727 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%),
+                url('img/sea-4768869_1920.jpg'); 
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-template-rows: auto auto;       
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 85px;
+    justify-self: start;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    justify-self: end;
+    grid-column: 2 / 4;
+    margin-bottom: 5px;
+}
+
+
+
+/* ✨ Knappestil */
+.btn-outline {
+    text-decoration: none;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-outline:hover {
+    background-color: #1ca2c1;
+    color: #fff;
+}
+
+
+/* 🍔 Hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.hamburger span {
+    width: 33px;
+    height: 5px;
+    background-color: #333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Mobilmeny */
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: flex;
+}
+
+.min-side-link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    gap: 0.5rem;
+}
+
+.min-side-link i {
+    font-size: 1.5rem;
+}
+
+.min-side-desktop {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.min-side-desktop i {
+    font-size: 1.3rem;
+}
+
+.min-side-desktop:hover {
+    background-color: #1ca2c1;
+    color: #fff;
+}
+
+.main-content {
+    width: 100%;              
+    max-width: 1200px;       
+    margin: 0 auto;          
+    padding: 20px 0;         
+}
+
+
+.booking-container {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+
+.tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 0rem;
+    margin-bottom: 1rem;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #252525;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tabs a.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+select, input[type="date"] {
+    width: auto;
+    padding: 1.2rem;
+    border: 1px solid black;
+    color: #000;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+select {
+    color: #000; 
+    font-size: 1rem;
+    appearance: none; 
+}
+
+select option {
+    color: #000 !important; 
+    background-color: #fff; 
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem; 
+    width: 100%;
+}
+
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    background-color: yellow;
+    padding: 0.5rem;      
+    font-size: 1.5rem; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.promo-banner {
+    width: 100%; 
+    background-image: url('img/holiday-2733322_1280.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+}
+
+/* 📃 Promo Content */
+.promo-content {
+    background-color: #31c9f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.promo-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.promo-content p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.promo-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.promo-button {
+    align-self: flex-end; 
+    padding: 0.75rem 1.5rem;
+    background-color: #f9c846;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10%;
+}
+
+.promo-button:hover {
+    background-color: #e6b43a;
+}
+
+.offers-slider {
+    display: flex;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.offer-card {
+    flex: 0 0 90%;  
+    max-width: 350px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;  
+    text-align: center;
+}
+
+.offer-card:first-child {
+    margin-left: 1rem;  
+}
+
+.offer-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.offer-card a {
+    text-decoration: none;
+    color: #1ca2c1;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.offer-card a i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.offer-card a:hover i {
+    transform: translateX(5px);
+}
+
+
+.tips-section {
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.tips-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.image-wrapper {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    left: 0px;
+    background-color: #1ca2c1;
+    color: #fff;
+    font-size: 1rem;     
+    padding: 0.6rem 1.2rem; 
+    border-radius: 10px 10px 10px 0;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 📄 Card Content */
+.tip-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.tip-card p {
+    font-size: 0.9rem;
+    margin: 0 1rem 1rem 1rem;
+    color: #555;
+}
+
+.site-footer {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-languages-top {
+    text-align: center;
+    background-color: #1d1d1d;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+    align-content: center;
+}
+
+.footer-languages-top a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-languages-top img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.site-footer {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-top {
+    display: block; 
+    text-align: center;
+}
+
+.footer-payments i {
+    font-size: 2rem;     
+    color: #ffffff;      
+    margin: 0 10px;  
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-payments i:hover {
+    color: #1ca2c1;      
+    transform: scale(1.2); /
+}
+
+.footer-newsletter form {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.footer-newsletter input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #f9c846;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #e6b43a;
+}
+
+.footer-customer-service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-customer-service li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin: 0.3rem 0;
+}
+
+.footer-customer-service li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #1ca2c1;
+}
+
+
+
+/* Mobilvisning */
+@media (max-width: 767px) {
+    .opprett-konto {
+        display: none;
+    }
+
+    .min-side-link {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .min-side-desktop {
+        display: none; 
+    }
+
+    .min-side-mobile {
+        text-decoration: none;
+        color: black;
+    }
+
+    .booking-container {
+        width: 95%;
+    }
+
+    .tips-slider {
+        display: flex;
+        flex-wrap: wrap;      
+        gap: 1rem;             
+        overflow-x: unset;     
+        justify-content: center; 
+    }
+
+    .tip-card {
+        flex: 0 0 90%;        
+        max-width: 100%;      
+        margin-bottom: 1rem;
+    }
+
+    .image-wrapper img {
+        height: auto;        
+        object-fit: cover;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    
+main {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, 
+                rgba(255, 255, 255, 0) 0%,  
+                rgba(255, 255, 255, 1) 100% 
+              ), 
+              url('img/sea-4768869_1920.jpg') no-repeat top;
+    background-size: cover;
+    background-position: top;
+
+}
+.hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        gap: 2rem;
+        grid-column: 1 / 4;
+        justify-content: flex-end;
+    }
+
+    .menu a {
+        padding: 0;
+    }
+
+    .menu a[href="opprett-konto.html"] {
+        display: none;
+    }
+
+    .min-side-desktop {
+        display: inline-block; 
+    }
+
+    .min-side-mobile {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+    .form-group {
+        flex: 1;
+        margin-bottom: 0;
+        height: 20%;
+    }
+
+    .form-row {
+        flex-direction: row;
+        width: 30%;
+    }
+
+    button {
+        width: auto;
+        padding: 1.5rem 6rem;
+        align-self: flex-end;
+    }
+
+    .btn-outline opprett-konto{
+        size: 0.3rem;
+    }
+
+    .min-side-desktop{
+        size: 1rem;
+    }
+
+    .booking-container {
+        margin-bottom: 100px;
+    }
+
+    .promo-banner {
+        gap: 3rem;
+    }
+
+
+    .promo-content {
+        width: 40%; 
+        margin-left: auto; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-content h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .promo-content p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .promo-content h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .promo-button {
+        margin-top: 2%;        
+    }
+
+    .offers-slider {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        overflow: hidden;
+    }
+
+    .offer-card {
+        flex: none;
+        width: 100%;
+        padding: 1.5rem;
+        text-align: left; 
+    }
+
+    .tips-slider {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        overflow: hidden;
+    }
+
+    .tip-card {
+        flex: none;
+        max-width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .image-wrapper img {
+        height: 200px;
+    }
+
+    .badge {
+        font-size: 1.2rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .footer-languages-top {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .footer-newsletter form {
+        text-align: left;
+    }
+
+    .footer-social {
+        text-align: right;
+    }
+
+}
