@@ -343,25 +343,6 @@ button:hover {
 }
 
 
-.tips-section {
-    margin-top: 2rem;
-    padding: 0 1rem;
-}
-
-.tips-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.tip-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    scroll-snap-align: start;
-}
-
 .image-wrapper {
     position: relative; 
     width: 100%;
@@ -373,6 +354,8 @@ button:hover {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .badge {
@@ -388,31 +371,78 @@ button:hover {
 }
 
 /* 📄 Card Content */
-.tip-card h3 {
-    font-size: 1.1rem;
+
+.tips-section {
+    margin-top: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.tips-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: bold;
-    margin: 1rem;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tip-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 1rem 0.5rem 1rem;
 }
 
 .tip-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin: 0 1rem 1rem 1rem;
     color: #555;
 }
+
+
+.tip-card a{
+    display: inline-block;
+    margin: 0 1rem 1rem 1rem;
+    color: #1ca2c1;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #1ca2c1;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tip-card a:hover {
+    color: #1ca2c1;
+    border-bottom: 2px solid #1ca2c1;
+}
+
+.tip-card:hover{
+    transform: translateY(-5px);
+}
+
+/* footer */
 
 .site-footer {
     background-color: #1d1d1d;
     color: #ffffff;
     padding: 2rem 1rem;
     font-family: 'Montserrat', sans-serif;
-    min
+    min-height: 100px;
 }
 
 .footer-languages-top {
     text-align: center;
     background-color: #1d1d1d;
-    padding: 1rem 0;
-    border-bottom: 1px solid #333;
+    margin-top: 0;
+    padding-top: 0;
+    margin-top: -50px;
+    margin-bottom: 40px;
     align-content: center;
 }
 
@@ -420,26 +450,26 @@ button:hover {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 25px;
     display: inline-block;
 }
 
 .footer-languages-top img {
-    width: 24px;
+    width: 34px;
     vertical-align: middle;
-    margin-right: 5px;
-}
-
-.site-footer {
-    background-color: #1d1d1d;
-    color: #ffffff;
-    padding: 2rem 1rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-top {
-    display: block; 
+    display: block;
     text-align: center;
+    gap: 1rem;
+}
+
+.footer-top h4{
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    color: white;
 }
 
 .footer-payments i {
@@ -456,30 +486,55 @@ button:hover {
 }
 
 .footer-newsletter form {
-    display: block;
-    margin-top: 0.5rem;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 0
 }
 
-.footer-newsletter input {
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: none;
-    width: 80%;
-    max-width: 250px;
-    margin-bottom: 0.5rem;
+.footer-newsletter a{
+    display: block;
+    margin-top: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .footer-newsletter button {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     background-color: #f9c846;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: background-color 0.3 ease;
+}
+
+.footer-newsletter a:hover {
+    text-decoration: underline;
 }
 
 .footer-newsletter button:hover {
     background-color: #e6b43a;
+}
+
+.footer-newsletter input{
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.footer-customer-service{
+    text-align: left;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .footer-customer-service ul {
@@ -510,9 +565,13 @@ button:hover {
 }
 
 
-
 /* Mobilvisning */
 @media (max-width: 767px) {
+
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+    }
 
     .main-content {
         width: 100%;                   
@@ -558,6 +617,68 @@ button:hover {
     .image-wrapper img {
         height: auto;        
         object-fit: cover;
+    }
+
+    .footer-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .footer-languages-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 1,5rem;
+    }
+
+    .site-footer h4{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .footer-payments{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer-payments i{
+        display: inline-block;
+        font-size: 2rem;
+        color: white;
+        margin: 0 5px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .footer-payments i:hover{
+        color: #1ca2c1;
+        transform: scale(1.2);
+    }
+
+    .footer-newsletter,
+    .footer-customer-service{
+        flex: 1;
+        min-width: 45%;
+    }
+
+    .footer-social{
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .footer-newsletter{
+        position: relative;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: left;
+        width: 100%;
+        max-width: 300px;
     }
 }
 
