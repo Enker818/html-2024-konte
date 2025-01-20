@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<body>
 <header class="header">
     <aside class="logo">
         <img src="img/fav.png" alt="Logo">
@@ -41,7 +42,93 @@
         <a href="#">Kontakt</a>
     </nav>
 </header>
-<body>
+
+<main>
+  
+    <section class="slideshow">
+        <!-- Radio buttons for controlling slides -->
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        <input type="radio" name="slider" id="slide6">
     
+        <!-- Slide images and captions -->
+        <figure class="slides">
+            <label for="slide6" class="prev">❮</label>
+            <img src="img/beach-666122_640.jpg" alt="Nature">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide2" class="next">❯</label>
+        </figure>
+    
+        <figure class="slides">
+            <label for="slide1" class="prev">❮</label>
+            <img src="img/beach.jpg" alt="Snow">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide3" class="next">❯</label>
+        </figure>
+    
+        <figure class="slides">
+            <label for="slide2" class="prev">❮</label>
+            <img src="img/greece.jpg" alt="Mountains">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide4" class="next">❯</label>
+        </figure>
+    
+        <figure class="slides">
+            <label for="slide3" class="prev">❮</label>
+            <img src="img/holiday-2733322_1280.jpg" alt="Holiday">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide5" class="next">❯</label>
+        </figure>
+    
+        <figure class="slides">
+            <label for="slide4" class="prev">❮</label>
+            <img src="img/landscape-2016308_640.jpg" alt="Landscape">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide6" class="next">❯</label>
+        </figure>
+    
+        <figure class="slides">
+            <label for="slide5" class="prev">❮</label>
+            <img src="img/sea-4768869_1920.jpg" alt="Sea">
+            <button class="heart-icon" aria-label="Add to favorites">
+                <i class="fas fa-heart"></i>
+            </button>
+            <label for="slide1" class="next">❯</label>
+        </figure>
+    
+        <!-- Dots -->
+        <nav class="dots">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+            <label for="slide4" class="dot"></label>
+            <label for="slide5" class="dot"></label>
+            <label for="slide6" class="dot"></label>
+        </nav>
+    </section>
+    
+    <section class="tabs-container-hotel">
+        <ul class="tabs-hotel">
+            <li class="tab-hotel active"><a href="#">Oversikt</a></li>
+            <li class="tab-hotel"><a href="#">Fasiliteter</a></li>
+            <li class="tab-hotel"><a href="#">Rom</a></li>
+        </ul>
+    </section>
+</main>
+
+
 </body>
 </html>
