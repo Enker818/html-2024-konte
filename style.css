@@ -5,14 +5,8 @@
     padding: 0;
 }
 
-main {
+.main {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%),
-                url('img/sea-4768869_1920.jpg'); 
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 200p;
     width: 100%;              
     max-width: 1000px;       
     margin: 0 auto;          
@@ -146,7 +140,7 @@ main {
 
 
 /*hotel.html */
-.slideshow {
+slideshow {
     max-width: 1000px;
     position: relative;
     overflow: hidden;
