@@ -44,81 +44,60 @@
 </header>
 
 <main>
-    <section id="slideshow">
-        <!-- Radio buttons for controlling slides -->
+    <section id="slider">
+
+        <div class="icon">
+            <i class="fa fa-heart"></i>
+        </div>
         <input type="radio" name="slider" id="slide1" checked>
         <input type="radio" name="slider" id="slide2">
         <input type="radio" name="slider" id="slide3">
         <input type="radio" name="slider" id="slide4">
-        <input type="radio" name="slider" id="slide5">
-        <input type="radio" name="slider" id="slide6">
+        <article id="slides">
+           <article id="overflow">
+              <article class="inner">
+                 <article class="slide slide_1">
+                 </article>
+                 <article class="slide slide_2">
+                 </article>
+                 <article class="slide slide_3">
+                 </article>
+                 <article class="slide slide_4">
+                 </article>
+              </article>
+           </article>
+        </article>
+        <article id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </article>
+        <article id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </article>
+     </section>
+
+     <section id="gallery-container">
+        <aside class="icon-container">
+            <i class="heart-icon">&hearts;</i>
+        </aside>
+        <section id="masonry-left">
+            <img class="hotel-image" src="img/landscape-2016308_640.jpg" alt="Pool">
+            <img class="hotel-image" src="img/beach-666122_640.jpg" alt="Beach Fun">
+            <img class="hotel-image" src="img/beach.jpg" alt="Waves">
+        </section>
     
-        <!-- Slide images and captions -->
-        <figure class="slides">
-            <label for="slide6" class="prev">❮</label>
-            <img src="img/beach-666122_640.jpg" alt="Nature">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide2" class="next">❯</label>
-        </figure>
-    
-        <figure class="slides">
-            <label for="slide1" class="prev">❮</label>
-            <img src="img/beach.jpg" alt="Snow">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide3" class="next">❯</label>
-        </figure>
-    
-        <figure class="slides">
-            <label for="slide2" class="prev">❮</label>
-            <img src="img/greece.jpg" alt="Mountains">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide4" class="next">❯</label>
-        </figure>
-    
-        <figure class="slides">
-            <label for="slide3" class="prev">❮</label>
-            <img src="img/holiday-2733322_1280.jpg" alt="Holiday">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide5" class="next">❯</label>
-        </figure>
-    
-        <figure class="slides">
-            <label for="slide4" class="prev">❮</label>
-            <img src="img/landscape-2016308_640.jpg" alt="Landscape">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide6" class="next">❯</label>
-        </figure>
-    
-        <figure class="slides">
-            <label for="slide5" class="prev">❮</label>
-            <img src="img/sea-4768869_1920.jpg" alt="Sea">
-            <button class="heart-icon" aria-label="Add to favorites">
-                <i class="fas fa-heart"></i>
-            </button>
-            <label for="slide1" class="next">❯</label>
-        </figure>
-    
-        <!-- Dots -->
-        <nav class="dots">
-            <label for="slide1" class="dot"></label>
-            <label for="slide2" class="dot"></label>
-            <label for="slide3" class="dot"></label>
-            <label for="slide4" class="dot"></label>
-            <label for="slide5" class="dot"></label>
-            <label for="slide6" class="dot"></label>
-        </nav>
+        <section id="masonry-right">
+            <img class="hotel-image" src="img/greece.jpg" alt="Beach Fun">
+            <img class="hotel-image" src="img/ski.jpg" alt="Waves">
+            <img class="hotel-image" src="img/storby.jpg" alt="Resort">
+        </section>
     </section>
-    
+
     <section class="tabs-container-hotel">
         <ul class="tabs-hotel">
             <li class="tab-hotel active"><a href="#">Oversikt</a></li>
@@ -126,7 +105,189 @@
             <li class="tab-hotel"><a href="#">Rom</a></li>
         </ul>
     </section>
+
+    <section id="review">
+        <h2>Parga Beach</h2>
+        <aside class="rating">
+            <span class="star"><i class="fa fa-star"></i></span>
+            <span class="star"><i class="fa fa-star"></i></span>
+            <span class="star"><i class="fa fa-star"></i></span>
+            <span class="star"><i class="fa fa-star"></i></span> 
+        </aside>
+        <aside class="score">
+            <span class="score-box">8.9</span>
+            <span class="score-text">Fantastisk</span>
+        </aside>
+        <a href="#" class="reviews-link">Se alle anmeldelsene &rsaquo;</a>
+    </section>
+
+    <section id="facilities">
+        <h2>Fasiliteter</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in nunc tempus metus luctus posuere a vel tortor. Proin ultrices, ante quis sagittis dignissim, lectus ligula vestibulum arcu, eu fringilla magna nibh convallis enim. Suspendisse non sem nisl. Sed a finibus risus. Quisque nec orci tincidunt, scelerisque justo at, ultricies nisl.
+        </p>
+        <ul class="facilities-list">
+            <li><i class="fa fa-paw"></i> Kjæledyr-vennlig</li>
+            <li><i class="fa fa-concierge-bell"></i> Romservice</li>
+            <li><i class="fa fa-coffee"></i> Frokost</li>
+            <li><i class="fa fa-glass-martini"></i> Bar</li>
+            <li><i class="fa fa-spa"></i> Spa</li>
+            <li><i class="fa fa-dumbbell"></i> Treningssenter</li>
+        </ul>
+        <a href="#" class="facilities-link">Se alle eiendomsfasiliteter &rsaquo;&rsaquo;</a>
+    </section>
+
+    <section id="google-maps">
+        <h2>Utforsk området</h2>
+        <aside class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.5648833799946!2d20.384412416045477!3d39.28166897951912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c87b219be850d%3A0xe5ae4a40d9f43268!2sParga%20Beach%20Resort!5e0!3m2!1sen!2sno!4v1678387878364!5m2!1sen!2sno" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </aside>
+    </section>
+
+    <section id="room-selection">
+        <h2>Velg rom</h2>
+        <ul class="room-grid">
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+    
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+    
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+    
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+
+            <li>
+                <img src="img/greece.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <p>Plass til 2 &middot; Queen size-seng</p>
+                <p>
+                    <span class="score-box">8.9</span> 
+                    <span class="reviews">59 anmeldelser</span>
+                </p>
+                <p class="price">6 789 kr</p>
+                <p>for 3 netter, 1 rom<br>2 263 kr per natt<br>Inkl moms og avgifter</p>
+            </li>
+        </ul>
+
+        <aside class="sticky-price">
+            <div class="price-details">
+                <strong>8 733 kr</strong>
+                <span>2 394 kr per natt</span>
+            </div>
+            <button class="select-room">Velg rom</button>
+        </aside>
+
+    </section>
 </main>
+
+<footer class="site-footer">
+    <section class="footer-languages-top">
+        <a href="#"><img src="img/sweden.png" alt="Sverige"> Sverige</a>
+        <a href="#"><img src="img/denmark.png" alt="Danmark"> Danmark</a>
+        <a href="#"><img src="img/norway.png" alt="Norge"> Norge</a>
+        <a href="#"><img src="img/material.png" alt="Suomi"> Suomi</a>
+        <a href="#"><img src="img/netherlands.png" alt="Nederland"> Nederland</a>
+    </section>
+
+    <section class="footer-top">
+        <aside class="footer-payments">
+            <h4>BETALINGSMETODER</h4>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-google-pay"></i>
+        </aside>
+
+        <aside class="footer-newsletter">
+            <h4>NYHETER & TILBUD</h4>
+            <p>Meld deg på nyhetsbrev her</p>
+            <form action="#">
+                <input type="email" placeholder="ola@example.com">
+                <button type="submit">Send</button>
+            </form>
+            <a href="#">Kjøp reisegavekort</a>
+        </aside>
+
+        <aside class="footer-customer-service">
+            <h4>KUNDESERVICE</h4>
+            <ul>
+                <li><a href="#">Spørsmål og Svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Tilgjengelighetserklæring</a></li>
+            </ul>
+        </aside>
+
+        <aside class="footer-social">
+            <h4>SOSIALE MEDIER</h4>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </aside>
+    </section>
+</footer>
 
 
 </body>
