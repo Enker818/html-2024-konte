@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<body>
+    
 <header class="header">
     <aside class="logo">
         <img src="img/fav.png" alt="Logo">
@@ -31,6 +33,7 @@
         </label>
     </aside>
 
+
     <input type="checkbox" id="menu-toggle">
     <nav class="menu">
         <a href="opprett-konto.html">Opprett en konto</a>
@@ -40,8 +43,8 @@
         <a href="#">Kontakt</a>
     </nav>
 </header>
-<body>
- <main>
+
+  <main class="order-main">
 
     <nav class="head-order">
         <ul>
@@ -55,19 +58,140 @@
         </ul>
     </nav>
 
-    <button class="action-order">
+    <label class="action-order" for="toggle-popup">
         Din valg <span class="right-arrow">&rarr;</span>
-    </button>
+    </label>
+    <input type="checkbox" id="toggle-popup" class="popup-checkbox">
+    
+    <article class="travel-card">
+        <img src="img/landscape-2016308_640.jpg" alt="Parga Beach" class="travel-image">
+        <h3 class="travel-title">Parga Beach</h3>
+        <section class="travel-info">
+            <p class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="color: wheat;"></i>
+            </p>
+            <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Hellas, Parga</p>
+            <p><span class="icon"><i class="fas fa-calendar-alt"></i></span> Man 5 mai - man 12 mai 2025</p>
+            <p><span class="icon"><i class="fas fa-user-friends"></i></span> 2 Voksne</p>
+            <p><span class="icon"><i class="fas fa-hotel"></i></span> Deluxerom, Balkong og ikke spesifisert utsikt.</p>
+            <p><span class="icon"><i class="fas fa-utensils"></i></span> Frokostbuffé</p>
+            <p><span class="icon"><i class="fas fa-plane"></i></span> Oslo Lufthavn — Preveza</p>
+        </section>
+        <footer class="travel-price">
+            <p class="old-price">22 003,-</p>
+            <p class="new-price">19 803,-</p>
+        </footer>
+    </article>
 
-   
+    <form>
+        <fieldset class="section">
+            <h2 class="header-form">Oppgi dine bestillingsopplysninger</h2>
+            <p>VOKSEN 18+ HOVEDBESTILLER</p>
+    
+            <section class="contact-fields">
+                <span class="field-group">
+                    <span class="field-name">FORNAVN (IFØLGE PASS):</span>
+                    <input type="text" class="input-field" required>
+                </span>
+                <span class="field-group">
+                    <span class="field-name">ETTERNAVN (IFØLGE PASS):</span>
+                    <input type="text" class="input-field" required>
+                </span>
+            </section>
+    
+            <aside class="date-form">
+                <label class="date-label">FØDSELSDATO:</label>
+                <aside class="date-inputs">
+                    <input type="number" class="date-input"  placeholder="DD" >
+                    <input type="number" class="date-input" placeholder="MM" >
+                    <input type="number" class="date-input"  placeholder="ÅÅÅÅ"> 
+                </aside>
+            </aside>
+    
+            <span class="field-name">KJØNN:</span>
+            <aside class="gender-group">
+                <input type="radio">
+                <span class="radio-label">Kvinne</span>
+                <input type="radio">
+                <span class="radio-label">Mann</span>
+            </aside>
+    
+            <section class="contact-fields">
+                <section class="field-group">
+                    <span class="field-name">E-POSTADRESSE:</span>
+                    <input type="email" class="input-field">
+                </section>
+                <section class="field-group">
+                    <span class="field-name">TELEFONNUMMER:</span>
+                    <input type="number" class="input-field">
+                </section>
+                <section class="field-group">
+                    <span class="field-name">GATEADRESSE:</span>
+                    <input type="text" class="input-field">
+                </section>
+                <section class="field-group">
+                    <span class="field-name">POSTNUMMER:</span>
+                    <input type="number" class="input-field">
+                </section>
+                <section class="field-group">
+                    <span class="field-name">POSTSTED:</span>
+                    <input type="text" class="input-field">
+                </section>
+                <section class="field-group">
+                    <span class="field-name">LAND:</span>
+                    <select class="input-field">
+                        <option value="" disabled selected hidden>Velg et land</option>
+                        <option value="norway">Norge</option>
+                        <option value="sweden">Sverige</option>
+                    </select>
+                </section>
+            </section>
 
-   
+            <p>VOKSEN 18+</p>
+    
+            <section class="contact-fields">
+                <span class="field-group">
+                    <span class="field-name">FORNAVN (IFØLGE PASS):</span>
+                    <input type="text" class="input-field">
+                </span>
+                <span class="field-group">
+                    <span class="field-name">ETTERNAVN (IFØLGE PASS):</span>
+                    <input type="text" class="input-field">
+                </span>
+            </section>
+    
+            <aside class="date-form">
+                <label class="date-label">FØDSELSDATO:</label>
+                <aside class="date-inputs">
+                    <input type="number" class="date-input-voksen" placeholder="DD">
+                    <input type="number" class="date-input-voksen" placeholder="MM">
+                    <input type="number" class="date-input-voksen" placeholder="ÅÅÅÅ">                                                
+                </aside>
+            </aside>
+    
+            <span class="field-name">KJØNN:</span>
+            <aside class="gender-group">
+                <input type="radio" id="additional-female">
+                <span class="radio-label">Kvinne</span>
+                <input type="radio" id="additional-male">
+                <span class="radio-label">Mann</span>
+            </aside>
 
- </main>
+
+            <label class="submit-button">
+                Siste trinn <span class="right-arrow">&rarr;</span>
+            </label>
+        </fieldset>
+    </form>
+    </main>
  
 
 
- <footer class="site-footer">
+  <footer class="site-footer">
     <section class="footer-languages-top">
         <a href="#"><img src="img/sweden.png" alt="Sverige"> Sverige</a>
         <a href="#"><img src="img/denmark.png" alt="Danmark"> Danmark</a>
@@ -89,10 +213,8 @@
         <aside class="footer-newsletter">
             <h4>NYHETER & TILBUD</h4>
             <p>Meld deg på nyhetsbrev her</p>
-            <form action="#">
                 <input type="email" placeholder="ola@example.com">
                 <button type="submit">Send</button>
-            </form>
             <a href="#">Kjøp reisegavekort</a>
         </aside>
 
@@ -115,6 +237,6 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </aside>
     </section>
-</footer>
+  </footer>
 </body>
 </html>

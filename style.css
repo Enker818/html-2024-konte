@@ -1,6 +1,8 @@
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Italic-VariableFont_wght.ttf)
+         url(fonts/Montserrat-VariableFont_wght.ttf);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -326,7 +328,7 @@ main {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-    z-index: 10; /* Keep above the slider */
+    z-index: 10; 
     cursor: pointer;
     z-index: 3;
 }
@@ -347,7 +349,7 @@ main {
 .tabs-container-hotel {
     margin-top: 10px;
     text-align: center;
-    border-bottom: 2px solid #e0e0e0; 
+    border-bottom: 2px solid white; 
     display: flex;
     margin-left: 5px;
     padding-bottom: 5px;
@@ -401,7 +403,6 @@ main {
     padding: 20px;
     max-width: 600px;
     text-align: left;
-    font-family: Arial, sans-serif;
 }
 
 #review h2 {
@@ -459,7 +460,6 @@ main {
     padding: 20px;
     max-width: 600px;
     text-align: left;
-    font-family: Arial, sans-serif;
 }
 
 #facilities h2 {
@@ -514,7 +514,6 @@ main {
     padding: 20px;
     max-width: 600px;
     text-align: left;
-    font-family: Arial, sans-serif;
 }
 
 #google-maps h2 {
@@ -545,7 +544,6 @@ main {
     margin: 20px auto;
     padding: 20px;
     max-width: 1200px;
-    font-family: Arial, sans-serif;
     position: relative; 
     background: #f9f9f9;
     min-height: 1000px;  
@@ -676,19 +674,18 @@ main {
 
 .head-order {
     overflow-x: auto; 
-    white-space: nowrap; 
     background-color: #008dbd; 
     padding: 5px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 
 .head-order ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 0; 
+
 }
 
 
@@ -702,7 +699,7 @@ main {
 
 .head-order a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
     color: #fff;
     padding: 5px 10px;
     border-radius: 20px;
@@ -738,44 +735,228 @@ main {
 }
 
 .action-order {
-    background-color: white; 
-    color: black; 
-    font-size: 16px;
-    font-weight: bold;
     padding: 10px 20px;
+    background-color: white;
+    color: black;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    display: inline-block;
+    margin: 20px;
     text-align: center;
-    display: inline-flex; 
-    align-items: center; 
-    gap: 10px; 
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
-    margin-top: 25px;
 }
-
-/* Hover-effekt */
-.action-order:hover {
-    background-color: #005999; 
-    transform: scale(1.05); 
-}
-
 
 .action-order .right-arrow {
-    font-size: 16px; 
+    font-size: 19px; 
+}
+
+.popup-checkbox {
+    display: none; 
+}
+
+.popup-checkbox:checked + .travel-card {
+    display: block; 
+}
+
+
+.travel-card {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none; 
+}
+
+
+.travel-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.travel-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: black;
+}
+
+.travel-info {
+    text-align: left;
+    padding: 10px 20px;
+    color: black;
+    font-size: 0.9em;
+}
+
+.travel-info .stars {
+    font-size: 1.2em;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+
+
+.travel-info .icon {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.travel-price {
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.travel-price .old-price {
+    text-decoration: line-through;
+    color: black;
+}
+
+.travel-price .new-price {
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 
 /* form */
 
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+
+.date-label {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: black;
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.field-name{
+    margin-top: 20px;
+}
+
+
+.date-inputs {
+    display: flex; 
+    gap: 10px; 
+}
+
+.date-input {
+    width: 110px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px; 
+    margin-top: 5px;
+}
+
+.date-input::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+
+.date-input-voksen {
+    width: 110px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px; 
+    margin-top: -25px;
+}
+
+
+.date-input-voksen::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+}
 
 
 
+.header-form{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.field-name {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.gender-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.radio-label {
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.submit-button {
+    display: flex; 
+    justify-content: center; 
+    width: 150px;
+    padding: 15px;
+    background-color: #f7b300;
+    color: black;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    gap: 10px; 
+}
+
+.submit-button:hover {
+    background-color: #e09d00;
+}
 
 
 
-
-
+/* index.html */
 .tabs {
     display: flex;
     overflow-x: auto;
@@ -1047,7 +1228,6 @@ button:hover {
     background-color: #1d1d1d;
     color: #ffffff;
     padding: 4rem 1rem;
-    font-family: 'Montserrat', sans-serif;
     min-height: 100px;
 }
 
@@ -1100,15 +1280,6 @@ button:hover {
     transform: scale(1.2); /
 }
 
-.footer-newsletter form {
-    display: flex;
-    align-items: center;
-    border: 1px solid white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    width: fit-content;
-    margin: 0;
-}
 
 .footer-newsletter a{
     display: block;
@@ -1279,17 +1450,19 @@ button:hover {
         transform: scale(1.2);
     }
 
-    .footer-newsletter,
-    .footer-customer-service{
-        flex: 1;
-        min-width: 45%;
+    .footer-customer-service,
+    .footer-social {
+        flex: 1; 
+        min-width: 45%; 
+        max-width: 50%; 
+        text-align: left; 
     }
 
     .footer-social{
         width: 100%;
         text-align: center;
-        margin-top: 1.5rem;
     }
+
 
     .footer-newsletter{
         position: relative;
@@ -1299,6 +1472,7 @@ button:hover {
         text-align: left;
         width: 100%;
         max-width: 300px;
+        margin-bottom: 40px;
     }
 
     .footer-newsletter h4 {
@@ -1313,23 +1487,14 @@ button:hover {
         color: #ffffff;
     }
 
-    .footer-newsletter form {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        border: none;
-        padding: 0;
-        box-shadow: none;
-        background: none;
-    }
 
     .footer-newsletter input{
-        width: 100%;
+        width: 70%;
         padding: 0.4rem;
         border: 1px solid #ccc;
         border-radius: 3px;
         font-size: 0.9rem;
-        outline: none
+        margin-bottom: 5px;
     }
 
     .footer-newsletter button{
@@ -1342,7 +1507,6 @@ button:hover {
         cursor: pointer;
         font-size: 0.9rem;
         transition: background-color 0.3s ease;
-
     }
 
     .footer-newsletter button:hover {
@@ -1412,16 +1576,6 @@ button:hover {
         display: none;
     }
 
-
-    #gallery-container {
-        display: flex; 
-        gap: 20px; 
-        justify-content: center; 
-        padding: 50px;
-        background-color: #f9f9f9;
-    }
-    
-
     #masonry-left, #masonry-right {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -1430,10 +1584,20 @@ button:hover {
         max-width: 700px; 
     }
 
+
+    #gallery-container {
+        display: flex; 
+        gap: 20px; 
+        justify-content: center; 
+        padding: 50px;
+        background-color: #f9f9f9;
+        position: relative; 
+    }
+    
     .icon-container {
         position: absolute; 
-        top: 235px; 
-        right: 485px; 
+        top: 55px; 
+        right: 55px; 
         background-color: white; 
         border-radius: 50%; 
         width: 30px; 
@@ -1482,9 +1646,7 @@ button:hover {
         width: 100%; 
         overflow: hidden; 
     }
-    
 
-    
 
     .hotel-image {
         width: 100%;
@@ -1518,11 +1680,92 @@ button:hover {
 
     /* order.html */
 
+    .order-main{
+        margin-left: 500px;
+    }
+    
+    .popup-checkbox,
+    .action-order {
+        display: none; 
+    }
 
+    .travel-card {
+        position: static; 
+        transform: none; 
+        display: block; 
+        width: 40%; 
+        margin: 0; 
+        margin-left: 450px;
+        margin-top: 60px;
+    }
 
+    .section {
+        margin-bottom: 20px;
+        width: 45%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin: 0; 
+        padding: 10px; 
+        margin-top: -600px;
+        margin-bottom: 50px;
+    }
+
+    .contact-fields {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        margin-top: 20px; 
+    }
+    
+    .field-group {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .field-name {
+        font-size: 0.9em; 
+        font-weight: bold; 
+        margin-bottom: 5px; 
+        color: #555; 
+    }
+    
+    .input-field {
+        width: 100%; 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        font-size: 0.9em; 
+        outline: none; 
+    }
+
+   .travel-card img {
+    width: 100%; 
+    height: auto;
+    }
+
+   .head-order{
+    max-width: 85%;
+    }
+
+    .date-label {
+        display: block; 
+        margin-bottom: 0; 
+    }
+
+    .date-inputs {
+        margin-top: 10px; 
+        display: flex; 
+        gap: 10px; 
+    }
+
+    .submit-button{
+        margin-top: 40px;
+    }
     
 
-    form {
+    /* index.html */
+    .form-index {
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -1630,7 +1873,6 @@ button:hover {
         background-color: #1d1d1d;
         color: #ffffff;
         padding: 4rem 1rem;  
-        font-family: 'Montserrat', sans-serif;
         min-height: 100px;   
     }
 
@@ -1686,29 +1928,18 @@ button:hover {
     
 
     .footer-newsletter form {
-        display: flex;
-        align-items: center;
-        border: 1px solid #ffffff; 
-        padding: 0.5rem;
-        border-radius: 5px;
-        width: fit-content;
-        text-align: left;
+        display: flex; 
+        gap: 10px; 
+        align-items: center; 
     }
 
-    .footer-newsletter a {
-        display: block;
-        margin-top: 0.5rem;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-    }
 
-    .footer-newsletter input{
-        padding: 0.5rem 1rem;
-        border: none;
-        outline: none;
-        border-radius: 3px;
-        width: 200px; 
+    .footer-newsletter input {
+        flex: 1; 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        outline: none; 
     }
     
     .footer-newsletter a:hover {
@@ -1716,14 +1947,12 @@ button:hover {
     }
 
     .footer-newsletter button {
-        padding: 0.2rem;
-        background-color: #f9c846; 
-        border: none;
-        border-radius: 3px;
-        font-weight: bold;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        padding: 10px 20px; 
+        background-color: #f7b300;
+        border-radius: 5px; 
+        color: #000; 
+        cursor: pointer; 
+        font-size: 1em; 
     }
     
     .footer-newsletter button:hover {
