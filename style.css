@@ -1007,6 +1007,18 @@ main {
     margin-bottom: 1rem;
 }
 
+.arrow-top-right {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    background-color: color;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    z-index: 10;
+}
+
+
 .tabs a {
     text-decoration: none;
     color: #252525;
@@ -1627,6 +1639,10 @@ button:hover {
 
     .search-button{
         padding: 0.6rem 4rem;
+    }
+
+    .arrow-top-right{
+        display: none;
     }
 
     /* hotel */
