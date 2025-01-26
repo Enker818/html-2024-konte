@@ -6,26 +6,30 @@
     <title>Forsiden</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 
 <header class="header">
     <aside class="logo">
-        <img src="img/fav.png" alt="Logo">
+        <a href="index.html">
+            <img src="img/fav.png" alt="Logo">
+        </a>
     </aside>
     <aside class="icons">
         <a href="order.html">
             <span class="fa-solid fa-magnifying-glass"></span>
         </a>
 
-        <a href="opprett-konto.html" class="btn-outline opprett-konto">Opprett en konto</a>
+        <a href="#" class="btn-outline opprett-konto">Opprett en konto</a>
 
-        <a href="min-side.html" class="min-side-desktop">
+        <a href="order.html" class="min-side-desktop">
             <i class="fa-regular fa-user"></i> Min side </a>
 
 
-        <a href="min-side.html" class="min-side-mobile">
+        <a href="order.html" class="min-side-mobile">
             <span class="fa-regular fa-user"></span>
         </a>
 
@@ -79,7 +83,6 @@
         </aside>
 
         <aside class="form-row">
-            <!-- Reiselengde -->
             <aside class="form-group">
                 <label for="length">Reiselengde</label>
                 <select id="length">
@@ -88,7 +91,6 @@
                 </select>
             </aside>
         
-            <!-- Velg dato -->
             <aside class="form-group">
                 <label for="date">Velg dato</label>
                 <input type="date" id="date">
@@ -96,12 +98,8 @@
         </aside>
 
         <aside class="form-group">
-            <label for="people">Antall reisende</label>
-            <select id="people">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
+            <label>Antall reisende</label>
+            <input type="number" min="1" max="10" placeholder="Skriv antall" id="people">
         </aside>
 
         <button type="submit" class="search-button">Søk</button>
@@ -115,7 +113,8 @@
         <p>Fly + hotell 7 dager </p>
         <h3>Fra 3 298-</h3>
     </aside>
-    <button class="promo-button">Bestill i dag</button>
+    <button class="promo-button" onclick="window.location.href='order.html';">Bestill i dag</button>
+
 </section>
 
 <section class="offers-slider">
@@ -147,69 +146,62 @@
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
 
         <article class="tip-card">
             <figure class="image-wrapper">
                 <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
             </figure>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
-
         <article class="tip-card">
             <figure class="image-wrapper">
                 <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
             </figure>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
-
         <article class="tip-card">
             <figure class="image-wrapper">
                 <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
             </figure>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
-
         <article class="tip-card">
             <figure class="image-wrapper">
                 <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
+                <span class="badge">Nyhet</span>
             </figure>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
-
         <article class="tip-card">
             <figure class="image-wrapper">
                 <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
             </figure>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
             <section>
-                <a href="#">Les mer →</a>
+                <a href="hotell.html">Les mer →</a>
             </section>
         </article>
+
         
     </section>
 </section>

@@ -6,24 +6,28 @@
     <title>Hotell side)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header class="header">
     <aside class="logo">
-        <img src="img/fav.png" alt="Logo">
+        <a href="index.html">
+            <img src="img/fav.png" alt="Logo">
+        </a>
     </aside>
     <aside class="icons">
         <a href="order.html">
             <span class="fa-solid fa-magnifying-glass"></span>
         </a>
 
-        <a href="opprett-konto.html" class="btn-outline opprett-konto">Opprett en konto</a>
+        <a href="#" class="btn-outline opprett-konto">Opprett en konto</a>
 
-        <a href="min-side.html" class="min-side-desktop">
+        <a href="order.html" class="min-side-desktop">
             <i class="fa-regular fa-user"></i> Min side </a>
 
 
-        <a href="min-side.html" class="min-side-mobile">
+        <a href="order.html" class="min-side-mobile">
             <span class="fa-regular fa-user"></span>
         </a>
 
@@ -51,6 +55,12 @@
         <aside class="icon">
             <i class="fa fa-heart"></i>
         </aside>
+
+        <aside class="image-counter">
+            <i class="fa fa-image"></i>
+            <span>49</span>
+        </aside>
+
         <input type="radio" name="slider" id="slide1" checked>
         <input type="radio" name="slider" id="slide2">
         <input type="radio" name="slider" id="slide3">
@@ -87,6 +97,7 @@
         <aside class="icon-container">
             <i class="heart-icon">&hearts;</i>
         </aside>
+
         <section id="masonry-left">
             <img class="hotel-image" src="img/landscape-2016308_640.jpg" alt="Pool">
             <img class="hotel-image" src="img/beach-666122_640.jpg" alt="Beach Fun">
@@ -98,13 +109,18 @@
             <img class="hotel-image" src="img/ski.jpg" alt="Waves">
             <img class="hotel-image" src="img/storby.jpg" alt="Resort">
         </section>
+
+        <aside class="image-counter-desktop">
+            <i class="fa fa-image"></i>
+            <span>49</span>
+        </aside>
     </section>
 
     <section class="tabs-container-hotel">
         <ul class="tabs-hotel">
             <li class="tab-hotel active"><a href="#">Oversikt</a></li>
             <li class="tab-hotel"><a href="#facilities">Fasiliteter</a></li>
-            <li class="tab-hotel"><a href="#room-selectio">Rom</a></li>
+            <li class="tab-hotel"><a href="#room-selection">Rom</a></li>
         </ul>
     </section>
 
@@ -242,7 +258,7 @@
     </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" id="footer">
     <section class="footer-languages-top">
         <a href="#"><img src="img/sweden.png" alt="Sverige"> Sverige</a>
         <a href="#"><img src="img/denmark.png" alt="Danmark"> Danmark</a>
