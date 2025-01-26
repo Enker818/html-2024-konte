@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -492,7 +493,7 @@ main {
 }
 
 .facilities-list li i {
-    font-size: 16px;
+    font-size: 21px;
     color: #444;
     margin-right: 10px;
 }
@@ -638,7 +639,7 @@ main {
 
 .room-grid p {
     font-size: 14px;
-    color: #555;
+    color: black;
     margin: 5px 0;
     line-height: 1.5; 
 }
@@ -1199,7 +1200,7 @@ button:hover {
 .tip-card p {
     font-size: 0.95rem;
     margin: 0 1rem 1rem 1rem;
-    color: #555;
+    color: black;
 }
 
 
@@ -1569,6 +1570,10 @@ button:hover {
 
     .min-side-mobile {
         display: none;
+    }
+
+    .search-button{
+        padding: 0.6rem 4rem;
     }
 
     /* hotel */

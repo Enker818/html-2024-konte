@@ -14,7 +14,9 @@
         <img src="img/fav.png" alt="Logo">
     </aside>
     <aside class="icons">
-        <span class="fa-solid fa-magnifying-glass"></span>
+        <a href="order.html">
+            <span class="fa-solid fa-magnifying-glass"></span>
+        </a>
 
         <a href="opprett-konto.html" class="btn-outline opprett-konto">Opprett en konto</a>
 
@@ -37,10 +39,10 @@
     <input type="checkbox" id="menu-toggle">
     <nav class="menu">
         <a href="opprett-konto.html">Opprett en konto</a>
-        <a href="#">Tips og inspirasjon</a>
-        <a href="#">Hotell</a>
-        <a href="#">Fly</a>
-        <a href="#">Kontakt</a>
+        <a href="index.html#tips-section">Tips og inspirasjon</a>
+        <a href="hotell.html">Hotell</a>
+        <a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a>
+        <a href="#footer">Kontakt</a>
     </nav>
 </header>
 
@@ -49,12 +51,12 @@
     <nav class="head-order">
         <ul>
             <li><a href="#">Søk</a></li>
-            <li><a href="#">Søkeresultater</a></li>
-            <li><a href="#">Romtype</a></li>
-            <li><a href="#">Fly</a></li>
+            <li><a href="hotell.html">Søkeresultater</a></li>
+            <li><a href="hotell.html#room-selection">Romtype</a></li>
+            <li><a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a></li>
             <li><a href="#">Tillegg</a></li>
             <li><a href="#" class="active">OPPLYSNINGER</a></li>
-            <li><a href="#">Bestill</a></li>
+            <li><a href="#order-end-button">Bestill</a></li>
         </ul>
     </nav>
 
@@ -182,7 +184,7 @@
             </aside>
 
 
-            <label class="submit-button">
+            <label class="submit-button" id="order-end-button">
                 Siste trinn <span class="right-arrow">&rarr;</span>
             </label>
         </fieldset>
