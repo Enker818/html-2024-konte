@@ -10,252 +10,249 @@
 
 </head>
 <body>
-
-
-<header class="header">
-    <aside class="logo">
-        <a href="index.html">
-            <img src="img/fav.png" alt="Logo">
-        </a>
-    </aside>
-    <aside class="icons">
-        <a href="order.html">
-            <span class="fa-solid fa-magnifying-glass"></span>
-        </a>
-
-        <a href="#" class="btn-outline opprett-konto">Opprett en konto</a>
-
-        <a href="order.html" class="min-side-desktop">
-            <i class="fa-regular fa-user"></i> Min side </a>
-
-
-        <a href="order.html" class="min-side-mobile">
-            <span class="fa-regular fa-user"></span>
-        </a>
-
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </aside>
-
-
-    <input type="checkbox" id="menu-toggle">
-    <nav class="menu">
-        <a href="opprett-konto.html">Opprett en konto</a>
-        <a href="index.html#tips-section">Tips og inspirasjon</a>
-        <a href="hotell.html">Hotell</a>
-        <a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a>
-        <a href="#footer">Kontakt</a>
-    </nav>
-</header>
-
-<main class="main-content">
+    <header class="header">
+        <aside class="logo">
+            <a href="index.html">
+                <img src="img/fav.png" alt="Logo">
+            </a>
+        </aside>
+        <aside class="icons">
+            <a href="order.html">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </a>
     
-<section class="booking-container">
-    <nav class="tabs">
-        <a href="#" class="tab active"><i class="fas fa-suitcase"></i> Fly + Hotell</a>
-        <a href="#" class="tab" target="_blank"><i class="fas fa-plane"></i> Fly</a>
-        <a href="#" class="tab"><i class="fas fa-city"></i> Storby</a>
-        <a href="#" class="tab"><i class="fas fa-skiing"></i> Ski</a>
-        <a href="#" class="tab"><i class="fas fa-map"></i> Kombinasjon</a>
-    </nav>
-    <span class="arrow-top-right"><i class="fa-solid fa-chevron-right"></i></span>
-
-
-    <form class="form-index">
-        <aside class="form-group">
-            <label for="from">Fra</label>
-            <select id="from">
-                <option>Oslo Lufthavn</option>
-                <option>Bergen Lufthavn</option>
-            </select>
+            <a href="#" class="btn-outline opprett-konto">Opprett en konto</a>
+    
+            <a href="order.html" class="min-side-desktop">
+                <i class="fa-regular fa-user"></i> Min side </a>
+    
+    
+            <a href="order.html" class="min-side-mobile">
+                <span class="fa-regular fa-user"></span>
+            </a>
+    
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </aside>
-
-        <aside class="form-group">
-            <label for="to">Til</label>
-            <select id="to">
-                <option>Albania</option>
-                <option>Danmark</option>
-                <option>Hellas</option>
-                <option>Finland</option>
-            </select>
-        </aside>
-
-        <aside class="form-row">
+    
+    
+        <input type="checkbox" id="menu-toggle">
+        <nav class="menu">
+            <a href="opprett-konto.html">Opprett en konto</a>
+            <a href="index.html#tips-section">Tips og inspirasjon</a>
+            <a href="hotell.html">Hotell</a>
+            <a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a>
+            <a href="#footer">Kontakt</a>
+        </nav>
+    </header>
+    
+    <aside class="background-wrapper"></aside>
+    <main class="main-content">
+        
+    <section class="booking-container">
+        <nav class="tabs">
+            <a href="#" class="tab active"><i class="fas fa-suitcase"></i> Fly + Hotell</a>
+            <a href="#" class="tab" target="_blank"><i class="fas fa-plane"></i> Fly</a>
+            <a href="#" class="tab"><i class="fas fa-city"></i> Storby</a>
+            <a href="#" class="tab"><i class="fas fa-skiing"></i> Ski</a>
+            <a href="#" class="tab"><i class="fas fa-map"></i> Kombinasjon</a>
+        </nav>
+        <span class="arrow-top-right"><i class="fa-solid fa-chevron-right"></i></span>
+    
+    
+        <form class="form-index">
             <aside class="form-group">
-                <label for="length">Reiselengde</label>
-                <select id="length">
-                    <option>Mindre enn 1 uke</option>
-                    <option>1-2 uker</option>
+                <label for="from">Fra</label>
+                <select id="from">
+                    <option>Oslo Lufthavn</option>
+                    <option>Bergen Lufthavn</option>
                 </select>
             </aside>
-        
-            <aside class="form-group">
-                <label for="date">Velg dato</label>
-                <input type="date" id="date">
-            </aside>
-        </aside>
-
-        <aside class="form-group">
-            <label>Antall reisende</label>
-            <input type="number" min="1" max="10" placeholder="Skriv antall" id="people">
-        </aside>
-
-        <button type="submit" class="search-button">Søk</button>
-    </form>
-</section>
-
-
-<section class="promo-banner">
-    <aside class="promo-content">
-        <h2>Bestill sommerens beste uke</h2>
-        <p>Fly + hotell 7 dager </p>
-        <h3>Fra 3 298-</h3>
-    </aside>
-    <button class="promo-button" onclick="window.location.href='order.html';">Bestill i dag</button>
-
-</section>
-
-<section class="offers-slider">
-    <article class="offer-card">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
-    </article>
-
-    <article class="offer-card">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
-    </article>
-
-    <article class="offer-card">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
-    </article>
     
-</section>
-
-<section class="tips-section" id="tips-section" >
-    <h2>Tips & inspirasjon</h2>
-    <section class="tips-slider">
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Ukens Deal</span>
-            </figure>
+            <aside class="form-group">
+                <label for="to">Til</label>
+                <select id="to">
+                    <option>Albania</option>
+                    <option>Danmark</option>
+                    <option>Hellas</option>
+                    <option>Finland</option>
+                </select>
+            </aside>
+    
+            <aside class="form-row">
+                <aside class="form-group">
+                    <label for="length">Reiselengde</label>
+                    <select id="length">
+                        <option>Mindre enn 1 uke</option>
+                        <option>1-2 uker</option>
+                    </select>
+                </aside>
+            
+                <aside class="form-group">
+                    <label for="date">Velg dato</label>
+                    <input type="date" id="date">
+                </aside>
+            </aside>
+    
+            <aside class="form-group">
+                <label>Antall reisende</label>
+                <input type="number" min="1" max="10" placeholder="Skriv antall" id="people">
+            </aside>
+    
+            <button type="submit" class="search-button">Søk</button>
+        </form>
+    </section>
+    
+    
+    <section class="promo-banner">
+        <aside class="promo-content">
+            <h2>Bestill sommerens beste uke</h2>
+            <p>Fly + hotell 7 dager </p>
+            <h3>Fra 3 298-</h3>
+        </aside>
+        <button class="promo-button" onclick="window.location.href='order.html';">Bestill i dag</button>
+    
+    </section>
+    
+     <section class="offers-slider">
+        <article class="offer-card">
             <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
+            <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
         </article>
-
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-            </figure>
+    
+        <article class="offer-card">
             <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
+            <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
         </article>
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-            </figure>
+    
+        <article class="offer-card">
             <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
+            <a href="#">Lorem ipsum dolor sit amet <i class="fas fa-angle-double-right"></i></a>
         </article>
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-            </figure>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
-        </article>
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-                <span class="badge">Nyhet</span>
-            </figure>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
-        </article>
-        <article class="tip-card">
-            <figure class="image-wrapper">
-                <img src="img/greece.jpg" alt="Greske favoritter">
-            </figure>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
-            <section>
-                <a href="hotell.html">Les mer →</a>
-            </section>
-        </article>
-
         
-    </section>
-</section>
-</main>
-
-<footer class="site-footer" id="footer">
-    <section class="footer-languages-top">
-        <a href="#"><img src="img/sweden.png" alt="Sverige"> Sverige</a>
-        <a href="#"><img src="img/denmark.png" alt="Danmark"> Danmark</a>
-        <a href="#"><img src="img/norway.png" alt="Norge"> Norge</a>
-        <a href="#"><img src="img/material.png" alt="Suomi"> Suomi</a>
-        <a href="#"><img src="img/netherlands.png" alt="Nederland"> Nederland</a>
-    </section>
-
-    <section class="footer-top">
-        <aside class="footer-payments">
-            <h4>BETALINGSMETODER</h4>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-paypal"></i>
-            <i class="fa-brands fa-apple-pay"></i>
-            <i class="fa-brands fa-google-pay"></i>
-        </aside>
-
-        <aside class="footer-newsletter">
-            <h4>NYHETER & TILBUD</h4>
-            <p>Meld deg på nyhetsbrev her</p>
-                <input type="email" placeholder="ola@example.com">
-                <button type="submit">Send</button>
-            <a href="#">Kjøp reisegavekort</a>
-        </aside>
-
-        <aside class="footer-customer-service">
-            <h4>KUNDESERVICE</h4>
-            <ul>
-                <li><a href="#">Spørsmål og Svar</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Tilgjengelighetserklæring</a></li>
-            </ul>
-        </aside>
-
-        <aside class="footer-social">
-            <h4>SOSIALE MEDIER</h4>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </aside>
-    </section>
-</footer>
-
-
+      </section>
+    
+      <section class="tips-section" id="tips-section" >
+        <h2>Tips & inspirasjon</h2>
+        <section class="tips-slider">
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                    <span class="badge">Ukens Deal</span>
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+    
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                    <span class="badge">Nyhet</span>
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+            <article class="tip-card">
+                <figure class="image-wrapper">
+                    <img src="img/greece.jpg" alt="Greske favoritter">
+                </figure>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae orci et venenatis. Vivamus sit amet eros eget orci ultrices tristique.</p>
+                <section>
+                    <a href="hotell.html">Les mer →</a>
+                </section>
+            </article>
+    
+            
+           </section>
+        </section>
+     </main>
+    
+     <footer class="site-footer" id="footer">
+        <section class="footer-languages-top">
+            <a href="#"><img src="img/sweden.png" alt="Sverige"> Sverige</a>
+            <a href="#"><img src="img/denmark.png" alt="Danmark"> Danmark</a>
+            <a href="#"><img src="img/norway.png" alt="Norge"> Norge</a>
+            <a href="#"><img src="img/material.png" alt="Suomi"> Suomi</a>
+            <a href="#"><img src="img/netherlands.png" alt="Nederland"> Nederland</a>
+        </section>
+    
+        <section class="footer-top">
+            <aside class="footer-payments">
+                <h4>BETALINGSMETODER</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-paypal"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+                <i class="fa-brands fa-google-pay"></i>
+            </aside>
+    
+            <aside class="footer-newsletter">
+                <h4>NYHETER & TILBUD</h4>
+                <p>Meld deg på nyhetsbrev her</p>
+                    <input type="email" placeholder="ola@example.com">
+                    <button type="submit">Send</button>
+                <a href="#">Kjøp reisegavekort</a>
+            </aside>
+    
+            <aside class="footer-customer-service">
+                <h4>KUNDESERVICE</h4>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </aside>
+    
+            <aside class="footer-social">
+                <h4>SOSIALE MEDIER</h4>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </aside>
+        </section>
+      </footer>
 </body>
 </html>
