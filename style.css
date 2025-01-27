@@ -1026,7 +1026,7 @@ main {
     width: 30px;
     height: 30px;
     font-size: 16px;
-    z-index: 10;
+    z-index: 9;
 }
 
 
@@ -1651,6 +1651,7 @@ button:hover {
 
     .search-button{
         padding: 0.6rem 4rem;
+        font-size: 1.3rem;
     }
 
     .arrow-top-right{
