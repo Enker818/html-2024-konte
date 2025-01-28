@@ -899,8 +899,7 @@ main {
 
 .date-label {
     font-size: 0.9em;
-    font-weight: normal;
-    color: black;
+    color: #555;
     display: block; 
     margin-bottom: 10px; 
 }
