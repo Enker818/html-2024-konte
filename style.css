@@ -901,7 +901,7 @@ main {
     font-size: 0.9em;
     color: #555;
     display: block; 
-    margin-bottom: 10px; 
+    margin-bottom: 30px; 
 }
 
 .field-name{
@@ -1834,10 +1834,6 @@ button:hover {
     max-width: 85%;
     }
 
-    .date-label {
-        display: block; 
-        margin-bottom: 0; 
-    }
 
     .date-inputs {
         margin-top: 10px; 
